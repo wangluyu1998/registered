@@ -47,7 +47,7 @@ $(function(){
                     pwdmsg.html("");
                     return true;
                 }else{
-                    pwdmsg.html("密码格式不正确");
+                    pwdmsg.html("密码格式不正确,应由8-16位字母和数字组成");
                     return false;
                 }
             }else{
