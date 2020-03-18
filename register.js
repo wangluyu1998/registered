@@ -42,8 +42,8 @@ $(function(){
         }
 
         function vPwd(){
-            if(/^(?![^a-zA-Z]+$)(?!\\D+$).{8,16}$/.val() !== ""){
-                if(reg.test(pwd.val())){
+            if(pwd.val() !== ""){
+                if(/^(?![^a-zA-Z]+$)(?!\\D+$).{8,16}$/.test(pwd.val())){
                     pwdmsg.html("");
                     return true;
                 }else{
