@@ -28,8 +28,7 @@ $(function(){
 
         function vPhone(){
             if(phone.val() !== ""){
-                let reg = /^[1][3,4,5,7,8,9][0-9]{9}$/;
-                if(reg.test(phone.val())){
+                if(/^[1][3,4,5,7,8,9][0-9]{9}$/.test(phone.val())){
                     phonemsg.html("");
                     return true;
                 }else{
@@ -43,8 +42,7 @@ $(function(){
         }
 
         function vPwd(){
-            let reg = /^(?![^a-zA-Z]+$)(?!\\D+$).{8,16}$/;
-            if(pwd.val() !== ""){
+            if(/^(?![^a-zA-Z]+$)(?!\\D+$).{8,16}$/.val() !== ""){
                 if(reg.test(pwd.val())){
                     pwdmsg.html("");
                     return true;
@@ -59,7 +57,7 @@ $(function(){
         }
 
         btncode.click(function(){
-            let number = 30;
+            var number = 30;
             btncode.hide();
             btntext.show();
             codemsg.html("");
