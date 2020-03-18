@@ -88,15 +88,15 @@ $(function(){
             return vName() && vPhone() && vPwd() && vCode();
         });
         name.focusout(function(){
-            vName() ? "" : name.select();
+            vName();
         });
         phone.focusout(function(){
-            vPhone() ? "" : phone.select();
+            vPhone();
         })
         pwd.focusout(function(){
-            vPwd() ? "" : pwd.select();
+            vPwd();
         })
         vcode.focusout(function(){
-            vCode() ? "" : vcode.select();
+            vCode();
         })
 });
